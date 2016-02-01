@@ -1,0 +1,10 @@
+sym16_simple_stock_ilike:
+    path:	/iLike/{verbe}
+    defaults: {_controller: SYMSimpleStockBundle:MonPremierControleur:iLike}
+
+produit:
+    path:	/produit/{nombre1}/{nombre2}
+    defaults: {_controller: SYMSimpleStockBundle:MonPremierControleur:produit}
+    requirements:
+        nombre1: ^[0-9a-fA-F]*$
+        nombre2: ^[0-9a-fA-F]*$
